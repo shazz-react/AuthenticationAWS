@@ -11,12 +11,19 @@ const styles = StyleSheet.create({
   container_PRIMARY: {
     backgroundColor: 'cornflowerblue',
   },
+  container_SECONDARY: {
+    borderColor: 'cornflowerblue',
+    borderWidth: 2,
+  },
   container_TERTIARY: {
     // backgroundColor: '',
   },
   text: {
     fontWeight: 'bold',
     color: 'white',
+  },
+  text_SECONDARY: {
+    color: 'cornflowerblue',
   },
   text_TERTIARY: {
     color: 'grey',

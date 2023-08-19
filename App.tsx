@@ -7,11 +7,16 @@
 
 import React from 'react';
 import {SafeAreaView} from 'react-native';
-import SignInScreen from './src/screens/signInScreen';
+import Navigation from './src/navigation';
+import {Amplify} from 'aws-amplify';
+import config from './src/aws-exports';
+
+Amplify.configure(config);
+
 function App(): JSX.Element {
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: 'ghostwhite'}}>
-      <SignInScreen />
+      <Navigation />
     </SafeAreaView>
   );
 }
